@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "APIs For Restaurant Server by AslanAsilon",
+        "description": "API documentation for the My Restaurant App such as Aresto, Savory, and Tailfood",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/menu": {
+            "get": {
+                "tags": [
+                    "Menus"
+                ],
+                "summary": "Get list of menus",
+                "operationId": "getMenusList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        }
+    }
+}
